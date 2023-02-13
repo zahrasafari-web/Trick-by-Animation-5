@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #000000;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding:10px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
+        }
+        .wave{
+            float: left;
+            margin: 20px;
+            animation: wave  ease-in-out 0.5s infinite alternate;
+            transform-origin: center -20px;
+        }
+        .wave:hover{
+            animation-play-state: paused;
+        }
+        .wave>img{
+            border: 5px solid #f8f8f8;
+            display: block;
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .wave>figcaption{
+            text-align: center;
+        }
+        .wave::after{
+            content: '';
+            position: absolute;
+            width: 20px; 
+            height: 20px;
+            border: 1.5px solid #ffffff;
+            top: -10px; 
+            left: 50%;
+            z-index: 0;
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(45deg);
+        }
+        .wave::before{
+            content: '';
+            position: absolute;
+            top: -23px;
+            left: 50%;
+            display: block;
+            height: 44px;
+            width: 47px;
+            background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            z-index: 16;
+        } 
+        @keyframes wave{
+            0% {transform: rotate(3deg);}
+            100% {transform: rotate(-3deg);}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <figure class="wave">
+    <img src="img/11 new.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+    <img src="img/DSC_0110.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+    <img src="img/DSC_0126.jpg" alt=""></img>
+         <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0274.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0289.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0382.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0389.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0406.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0407.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0411.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="wave">
+            <img src="img/DSC_0426.jpg" alt=""></img>
+            <figcaption></figcaption>
+        </figure>
+ </div>
+</body>
+</html>
